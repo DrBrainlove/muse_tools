@@ -27,3 +27,4 @@ Load muse OSC output in command line with:
 ```
 muse-io --preset 14 --osc osc.udp://localhost:5000
 ```
+If it detects the correct muse headset, it will go into listening mode and display updates of headset status. It will also run an OSC server to publish [OSC topics](https://sites.google.com/a/interaxon.ca/muse-developer-site/museio/osc-paths/3-4-0), such as `/muse/eeg` or `/muse/elements/alpha_absolute`. An OSC client can access this server at the target port and catch the OSC topics, processing them downstream,
